@@ -9,7 +9,7 @@ wordList=["live","love","laugh", "aardvark","baboon","camel" ]
 chosenWord = random.choice(wordList)
 print(chosenWord)
 
-#placeholder for letters in chosenWord
+#placeholder for letters in 
 placeholder = ""
 for i in range(len(chosenWord)):
     #since its a string you use += for the concatenation of the "_" together
@@ -58,11 +58,7 @@ while not gameOver:
     #print message if all the letters are figured out
     if "_" not in display:
         gameOver = True
-        print("you win!")
-        
-    playAgain = input("Do you want to play again? y/n ")
-    if playAgain == "y":
-        play()
+        print("you win!")        
 print("Game over")
 
 
