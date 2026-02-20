@@ -24,10 +24,7 @@ for shape_side_n in range(3,11):
     tim.color(random.choice(color))
     #use a function in a loop
     draw_shape(shape_side_n)
-    
-
-    
-    
+        
 screen = Screen()
 screen.exitonclick()
 
