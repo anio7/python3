@@ -1,3 +1,3 @@
 # python3
 
-Remember to come into pythonJourn first then do the git push ....or git commit
+Remember to come into pythonJourn first then do the .... git commit then git push
