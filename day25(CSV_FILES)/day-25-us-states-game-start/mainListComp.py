@@ -17,10 +17,12 @@ while len(guess_states) < 50:
     print(ans_state)    
     if ans_state == "exit":
         break 
-    miss_states = []
-    for state in all_states:
-        if state not in guess_state:
-            miss_states.append(state)
+    # miss_states = []                  {var_name}
+    # for state in all_states:          {for- loop}
+    #     if state not in guess_state:  {condition}
+    #         miss_states.append(state) {expression}
+    #using list comprehension learnt in day26
+    miss_state = [state for state in all_states if state not in guess_states]
     new_data = pandas.DataFrame(miss_states)
     new_data.to_csv("states_to_learn.csv")
          
